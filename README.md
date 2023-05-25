@@ -88,4 +88,4 @@ Postgram is a social media application that uses Socket.io to allow users to cre
 
 - And Finally , run `cd .\server\` then `npm start`
 ---
-> **Backend Code - ** https://github.com/abhi9720/postgram-server
+> **Deployed Link - ** https://postgram-social.netlify.app/

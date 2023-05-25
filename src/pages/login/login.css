@@ -1,0 +1,239 @@
+.login {
+
+  background-color: #f3f1ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.removedecoration {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0 !important;
+}
+
+.postgramlogo {
+  height: 45px !important;
+
+}
+
+.loginWrapper {
+  width: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #075353;
+  margin-bottom: 10px;
+  text-shadow: rgba(236, 236, 236, 0.4) 0px 54px 149px;
+
+  /* -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68); */
+}
+
+.loginDesc {
+  margin: 0px 0px 0.35em;
+  font-family: Inter, sans-serif;
+  font-size: 2rem;
+  line-height: 1.167;
+  color: #1e2022;
+  font-weight: 700;
+}
+
+.loginBox {
+  height: 280px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #1e2022;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgb(140 152 164 / 25%) 0px 3px 6px 0px;
+  overflow: hidden;
+
+
+}
+
+.loginInput {
+  height: 50px;
+
+  border: 1px solid gray !important;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.loginInput:focus {
+  outline: none;
+  border: 1px solid #1775ee;
+  background-color: #fff;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+}
+
+.loginButton {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2e51b5;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  color: #1775ee;
+  border: 1px solid #1775ee;
+  background-color: #1774ee23;
+}
+
+.loginForget {
+  text-align: center;
+  color: #1775ee;
+  cursor: pointer;
+}
+
+/* 
+.loginRegisterButton:hover {
+	color: #42b72a;
+	border: 1px solid #42b72a;
+	background-color: #42b72a25;
+} */
+
+.registerNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #453197;
+}
+
+.loginRegisterButton {
+  margin-left: 12px;
+}
+
+@media (max-width: 780px) {
+  .loginWrapper {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .loginDesc {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+
+}
+
+.login * {
+  overflow-y: hidden;
+}
+
+.loginBox .MuiFilledInput-root.MuiFilledInput-underline {
+  background-color: #fff;
+}
+
+.counter {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+}
+
+.counter .counter-icon {
+  color: #fff;
+  background-color: #51abe8;
+  font-size: 40px;
+  line-height: 90px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.counter .counter-value {
+  color: #51abe8;
+  background-color: #eee;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 15px;
+  margin: -25px 0 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.counter h3 {
+  color: #fff;
+  background-color: #51abe8;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 8px 12px;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) inset;
+  display: inline-block;
+}
+
+.counter.green .counter-icon,
+.counter.green h3 {
+  background-color: #3BB44A;
+}
+
+.counter.green .counter-value {
+  color: #3BB44A;
+}
+
+.counter.red .counter-icon,
+.counter.red h3 {
+  background-color: #F2474F;
+}
+
+.counter.red .counter-value {
+  color: #F2474F;
+}
+
+.counter.orange .counter-icon,
+.counter.orange h3 {
+  background-color: #F89128;
+}
+
+.counter.orange .counter-value {
+  color: #F89128;
+}
+
+@media screen and (max-width:990px) {
+  .counter {
+    margin-bottom: 40px;
+  }
+}
+
+.visitCounter{
+  
+
+  position: relative;
+  bottom: -90px;
+  text-transform: capitalize;
+}

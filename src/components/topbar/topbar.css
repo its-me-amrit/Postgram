@@ -1,0 +1,275 @@
+.logolg {
+
+  width: 160px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.logosm {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-left: 3px;
+}
+
+
+.bnmainbtn {
+  border-radius: 50%;
+  background-color: #F0F7FF;
+}
+
+* {
+  --tw-ring-inset: var(--tw-empty,
+      /*!*/
+      /*!*/
+    );
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #3b82f680;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px 0 #0000000f;
+
+}
+
+
+.customnav {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+
+
+.navbar_css {
+
+  padding-top: 0px;
+  height: 58px !important;
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px;
+  width: 100%;
+  display: block;
+  box-shadow: none;
+  transition: top 0.3s;
+}
+
+.topbarLeft {
+  width: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.topbarCenter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 0px 40px;
+}
+
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px 4px;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+
+
+
+}
+
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+
+.displayFriendRequest {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.logout a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logout a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.logout a .MuiSvgIcon-root {
+  margin-left: 4px;
+}
+
+
+
+.displayFriendRequest {
+  position: fixed;
+  right: 18%;
+  top: 10%;
+  z-index: 1;
+  padding: 10px 10px;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  border-radius: 8px;
+  z-index: 100;
+  cursor: pointer;
+  animation: animate 0.3s;
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 150px;
+  max-height: 400px;
+  background-color: #fff;
+
+}
+
+@media(max-width:800px) {
+  .displayFriendRequest {
+    top: 16%;
+  }
+}
+
+.norequest {
+  padding: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 700px) {
+  .topbarLeft {
+    width: 0;
+  }
+
+  .topbarCenter {
+    width: 60%;
+    padding-left: 0px;
+    margin-left: 0px;
+    justify-content: space-between;
+  }
+
+  .topbarRight {
+    /* border: 1px solid red; */
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 12px;
+  }
+
+  .logout a .MuiSvgIcon-root {
+    margin-left: 4px;
+  }
+
+  .MuiPaper-root {
+    margin: 0;
+    padding: 0;
+  }
+
+  .w-sm-90 {
+    width: 90%;
+  }
+}
+
+/* .MuiToolbar-regular {
+  min-height: none !important;
+} */
+
+
+.offcanvas.show {
+  z-index: 100000;
+}
+
+
+@media(max-width:800px) {
+
+  .sidebar:focus-within {
+    flex: 1;
+  }
+
+
+  .sidebar:focus-within+li.logout {
+    opacity: 0;
+    display: none !important;
+    visibility: hidden;
+    transition: opacity 1s ease-out;
+
+  }
+
+  li.logout {
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+
+  li.logout button {
+    padding-left: 0px;
+  }
+}

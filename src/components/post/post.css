@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.post {
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+  border: none;
+  overflow: hidden;
+  display: inline-block;
+
+  overflow: hidden;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif !important;
+  background-color: #fff;
+  color: #223354 !important;
+  max-width: 700px !important;
+  width: 470px;
+
+
+  border: 1px solid #dbdbdb;
+
+  padding: 10px 0px;
+  /* border-radius: 20px; */
+
+}
+
+.postCenterImage {
+  position: relative;
+
+}
+
+.postlikeshow {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  z-index: 100;
+
+
+}
+
+@media(max-width:800px) {
+  .postlikeshow {
+    left: 35%;
+
+  }
+}
+
+.postlikeshow img {
+  height: 90px;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  /* background-color: #fff; */
+}
+
+.postTop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 16px 0px 16px 10px;
+  border-bottom: 1px solid #e0fbfc;
+  min-height: fit-content;
+
+}
+
+.postTopLeft {
+  display: flex;
+  color: linear-gradient(to right, #005c97, #363795) !important;
+
+}
+
+.postTopLeft a {
+  text-decoration: none !important;
+}
+
+
+
+.postProfileImg {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Post_user {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.postUserName {
+  display: block;
+  color: #262626;
+  /* margin: 0 10px; */
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-overflow: ellipsis;
+  /* margin: 0 10px; */
+}
+
+.postDate {
+  font-size: 10px;
+}
+
+.postCenter {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  background-color: #1e2022;
+  width: 100%;
+
+}
+
+
+
+.caption {
+  -webkit-box-flex: 1;
+  margin-top: 0;
+  color: #262626;
+  padding: 0px 5px;
+}
+
+.postText {
+
+
+  font-style: normal;
+  font-size: 15px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  vertical-align: baseline;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  white-space: pre-wrap;
+}
+
+.postText p {
+  margin-bottom: 0;
+}
+
+
+.postBottom {
+  color: #262626;
+  padding: 0;
+  margin: 0;
+
+}
+
+.postBottomLeft {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0;
+  width: fit-content;
+  position: relative;
+  left: -40px;
+
+}
+
+
+.likeIcon {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out !important;
+}
+
+.likeIcon:hover {
+  transform: scale(1.2);
+}
+
+.postLikeCounter {
+  font-size: 12px !important;
+  color: #262626;
+  font-weight: 600 !important;
+  position: relative;
+  left: -15px;
+  top: 0px;
+
+}
+
+.postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed gray;
+  font-size: 15px;
+}
+
+.postBottomLeft:first-child {
+  transform: scale(0.8);
+
+}
+
+@media(max-width:800px) {
+  .post {
+    width: 100%;
+    margin-bottom: 0px;
+    border: 0;
+    border-radius: 2px;
+    padding: 0px;
+
+  }
+
+  .postBottomLeft {
+    left: -40px;
+  }
+
+  .lazy-load-image-background.blur.lazy-load-image-loaded img {
+    width: 100%;
+    object-fit: fill !important;
+    padding: 0;
+    background-position: center !important;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .postProfileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .postUserName {
+    display: block;
+    color: #262626;
+    /* margin: 0 10px; */
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-overflow: ellipsis;
+  }
+
+
+  .postTopRight button {
+    min-width: 44px !important;
+    padding: inherit 0 !important;
+  }
+
+}
+
+.seemorebtn {
+  cursor: pointer;
+  color: #223354;
+  white-space: pre-wrap;
+  font-size: small;
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+
+@media(min-width:801px) {
+  .lazy-load-image-background.blur.lazy-load-image-loaded img {
+    width: 100%;
+    max-height: 100vh;
+    height: auto;
+    object-fit: contain;
+    background-position: center;
+  }
+}
+
+.go2484888251 {
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+
+}
+
+
+
+
+.go2484888251.transit {
+
+
+  transform: scale(1.3);
+
+}
+
+.go4268192979 {
+  background-position: 2px 2px !important;
+}

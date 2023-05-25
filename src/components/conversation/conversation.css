@@ -1,0 +1,50 @@
+.conversation {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(220, 233, 238, 0.473);
+  padding-left: 10px;
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s;
+}
+
+.conversation:hover {
+  background-color: rgba(106, 121, 135, 0.094);
+}
+
+.activeconversation {
+  background-color: rgba(119, 136, 153, 0.164);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+}
+
+.ConversationUser {
+  margin-right: 10px;
+  position: relative;
+}
+
+.conversationImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+.conversationName {
+  font-weight: 500;
+  font-size: 18px;
+  color: #13294b !important;
+}
+
+.rightbarOnline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  border: 2px solid white;
+}
